@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAPPO | Planos Google Meu Negócio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --azul: #001f3f;
+      --gelo: #f5f9ff;
+      --branco: #ffffff;
+      --cinza: #ccc;
+      --sombra: rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--gelo);
+      color: var(--azul);
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #444;
+    }
+
+    .planos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .plano {
+      background: var(--branco);
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 10px 20px var(--sombra);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      cursor: pointer;
+    }
+
+    .plano:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .plano h2 {
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .plano .preco {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #0074D9;
+      margin: 1rem 0;
+    }
+
+    .plano ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .plano ul li {
+      margin-bottom: 0.6rem;
+    }
+
+    .plano .botao {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.5rem;
+      background: var(--azul);
+      color: var(--branco);
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .plano .botao:hover {
+      background: #003366;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Planos Mappo</h1>
+    <p>Sua presença local, no mapa certo.</p>
+  </header>
+
+  <section class="planos">
+    <div class="plano">
+      <h2>No Mapa</h2>
+      <p class="preco">R$19/mês ou R$180/ano</p>
+      <ul>
+        <li>Criação/verificação do perfil</li>
+        <li>Atualização de informações</li>
+        <li>1 publicação mensal</li>
+        <li>Dicas de boas práticas</li>
+        <li>Suporte WhatsApp (48h)</li>
+      </ul>
+      <a href="#" class="botao">Assinar</a>
+    </div>
+
+    <div class="plano">
+      <h2>Presença Local</h2>
+      <p class="preco">R$49/mês ou R$480/ano</p>
+      <ul>
+        <li>Tudo do plano anterior</li>
+        <li>1 postagem semanal</li>
+        <li>Resposta a avaliações</li>
+        <li>Otimização de categorias</li>
+        <li>Relatório mensal</li>
+        <li>Suporte WhatsApp (24h)</li>
+      </ul>
+      <a href="#" class="botao">Assinar</a>
+    </div>
+
+    <div class="plano">
+      <h2>Turbo Local</h2>
+      <p class="preco">R$89/mês ou R$840/ano</p>
+      <ul>
+        <li>Tudo do anterior</li>
+        <li>2 postagens semanais</li>
+        <li>SEO Local + produtos</li>
+        <li>Relatório e recomendações</li>
+        <li>Gestão de perguntas</li>
+        <li>Atendimento prioritário (12h)</li>
+      </ul>
+      <a href="#" class="botao">Assinar</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mappo. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
